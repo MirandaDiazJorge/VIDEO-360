@@ -1,0 +1,10 @@
+# Local HTTPS Dev Server Certificates
+cert.pem
+key.pem
+
+# OS generated files
+Thumbs.db
+.DS_Store
+
+# Logs
+*.log
