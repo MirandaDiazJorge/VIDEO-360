@@ -1,0 +1,1566 @@
+/* ==========================================================================
+   DEDICATED 360 VR LANDING STYLES - MIRANDA PRODUCCIONES
+   Complementa y expande el sistema cinematográfico luxury (style.css)
+   ========================================================================== */
+
+/* Hero adjustments for dedicated 360 presentation */
+.vr-hero-custom {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 60px;
+}
+
+.hero-badge-tag-vr {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(212, 175, 55, 0.12);
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  padding: 6px 16px;
+  border-radius: 999px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold-light, #faedd7);
+  margin-bottom: 1.5rem;
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.15);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #faedd7 0%, #d4af37 60%, #aa8420 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-quote-phrase {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(1.2rem, 2.5vw, 1.85rem);
+  font-style: italic;
+  color: #fff;
+  margin-top: 1rem;
+  margin-bottom: 1.2rem;
+  letter-spacing: 0.02em;
+}
+
+.hero-quote-phrase .quote-accent {
+  color: var(--gold, #d4af37);
+  font-weight: 500;
+}
+
+.hero-description-block {
+  max-width: 680px;
+  margin: 0 auto 2.2rem;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #c5c2be;
+}
+
+.vr-hero-stats {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.vr-stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vr-stat-num {
+  font-family: 'Cinzel', serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--gold, #d4af37);
+  line-height: 1.1;
+}
+
+.vr-stat-label {
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #8e8b85;
+  margin-top: 4px;
+}
+
+.vr-stat-divider {
+  width: 1px;
+  height: 32px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Interactive Stage for 360 */
+.vr-showcase-section {
+  position: relative;
+  background: radial-gradient(circle at center 20%, rgba(212, 175, 55, 0.06) 0%, transparent 65%), #080808;
+}
+
+.vr-interactive-stage {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.vr-media-frame--large {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.7), 0 0 35px rgba(212, 175, 55, 0.18);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+/* Concept Grid Enhancement */
+.concept-icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+  color: var(--gold, #d4af37);
+}
+
+.concept-glyph {
+  font-family: 'Cinzel', serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: rgba(212, 175, 55, 0.4);
+}
+
+/* Moments Grid */
+.moments-interactive-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.moment-card {
+  position: relative;
+  background: rgba(18, 18, 18, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 1.75rem;
+  border-radius: 8px;
+  display: flex;
+  gap: 1.25rem;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.moment-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(212, 175, 55, 0.4);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5), 0 0 15px rgba(212, 175, 55, 0.1);
+}
+
+.moment-card-num {
+  font-family: 'Cinzel', serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--gold, #d4af37);
+  opacity: 0.75;
+  line-height: 1;
+}
+
+.moment-card-title {
+  font-family: 'Cinzel', serif;
+  font-size: 1.05rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.05em;
+}
+
+.moment-card-desc {
+  font-size: 0.88rem;
+  color: #a8a49e;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.vr-technical-note {
+  font-size: 0.82rem;
+  color: #72706b;
+  font-style: italic;
+  margin-top: 2rem;
+}
+
+/* Hardware Package Showcase */
+.vr-package-showcase {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.package-feature-item {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 8px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  transition: border-color 0.3s ease;
+}
+
+.package-feature-item:hover {
+  border-color: rgba(212, 175, 55, 0.3);
+}
+
+.package-feature-item .feature-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.package-feature-item h3 {
+  font-family: 'Cinzel', serif;
+  font-size: 1rem;
+  color: var(--gold-light, #faedd7);
+  margin-bottom: 0.75rem;
+  letter-spacing: 0.05em;
+}
+
+.package-feature-item p {
+  font-size: 0.88rem;
+  color: #9f9b94;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Deal Box */
+.vr-deal-box {
+  background: linear-gradient(135deg, rgba(20, 20, 18, 0.95) 0%, rgba(12, 12, 10, 0.95) 100%);
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  border-radius: 12px;
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 3rem;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7), 0 0 30px rgba(212, 175, 55, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.vr-deal-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--gold, #d4af37), transparent);
+}
+
+.deal-kicker {
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  color: var(--gold, #d4af37);
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.deal-title {
+  font-family: 'Cinzel', serif;
+  font-size: clamp(1.6rem, 2.8vw, 2.4rem);
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.deal-price-row {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.deal-price-row .price-prefix {
+  font-size: 1rem;
+  color: #a5a29c;
+}
+
+.deal-price-row .price-amount {
+  font-family: 'Cinzel', serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--gold, #d4af37);
+}
+
+.deal-text {
+  font-style: italic;
+  color: #d1cdc7;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  border-left: 2px solid var(--gold, #d4af37);
+  padding-left: 1rem;
+}
+
+.deal-checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.deal-checklist li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.6rem;
+  font-size: 0.9rem;
+  color: #b5b1aa;
+}
+
+.deal-checklist li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--gold, #d4af37);
+  font-weight: bold;
+}
+
+.deal-card-cta {
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.deal-card-cta h3 {
+  font-family: 'Cinzel', serif;
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.deal-card-cta p {
+  font-size: 0.88rem;
+  color: #8e8b85;
+  margin-bottom: 1.5rem;
+}
+
+/* Responsiveness */
+@media (max-width: 900px) {
+  .vr-deal-box {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem;
+  }
+  
+  .vr-hero-stats {
+    flex-wrap: wrap;
+    gap: 1.2rem;
+  }
+  
+  .vr-stat-divider {
+    display: none;
+  }
+}
+
+
+/* ==========================================================================
+   OFERTA LANZAMIENTO 2027 AL 40% (PRECIO TACHADO 300 € -> 180 €)
+   ========================================================================== */
+
+/* Hero Offer Pill */
+.hero-offer-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(212, 175, 55, 0.08);
+  border-color: rgba(212, 175, 55, 0.5);
+  padding: 12px 24px;
+  transition: all 0.3s ease;
+}
+
+.hero-offer-pill:hover {
+  background: rgba(212, 175, 55, 0.2);
+  border-color: var(--gold, #d4af37);
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.3);
+  transform: translateY(-2px);
+}
+
+.hero-offer-striked {
+  text-decoration: line-through;
+  color: #8b8882;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.hero-offer-highlight {
+  color: var(--gold-light, #faedd7);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  font-size: 0.88rem;
+}
+
+/* Ribbon Promocional en Tarjeta de Tarifa */
+.launch-promo-ribbon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: linear-gradient(135deg, #d4af37 0%, #aa8420 100%);
+  color: #080808;
+  font-family: 'Cinzel', serif;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  padding: 8px 24px 8px 30px;
+  border-bottom-left-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: -5px 5px 20px rgba(0, 0, 0, 0.4);
+  z-index: 5;
+}
+
+.launch-promo-ribbon .ribbon-icon {
+  font-size: 1rem;
+}
+
+/* Bloque Promocional Ultra Visual */
+.promo-pricing-banner {
+  background: radial-gradient(circle at 10% 20%, rgba(212, 175, 55, 0.12) 0%, rgba(0, 0, 0, 0.4) 80%);
+  border: 1px solid rgba(212, 175, 55, 0.45);
+  border-radius: 12px;
+  padding: 1.75rem;
+  margin: 1.5rem 0;
+  box-shadow: inset 0 0 30px rgba(212, 175, 55, 0.08), 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.promo-badge-tag {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 1.25rem;
+}
+
+.promo-discount-badge {
+  background: linear-gradient(135deg, #e63946 0%, #ba181b 100%);
+  color: #ffffff;
+  font-family: 'Cinzel', serif;
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  padding: 5px 14px;
+  border-radius: 4px;
+  box-shadow: 0 4px 15px rgba(230, 57, 70, 0.4);
+  animation: pulseBadge 2.4s infinite ease-in-out;
+}
+
+@keyframes pulseBadge {
+  0%, 100% {
+    box-shadow: 0 4px 15px rgba(230, 57, 70, 0.4);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 6px 22px rgba(230, 57, 70, 0.7);
+    transform: scale(1.03);
+  }
+}
+
+.promo-motive-pill {
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--gold-light, #faedd7);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 4px 12px;
+  border-radius: 999px;
+}
+
+.promo-prices-comparison {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.75rem;
+  margin: 1rem 0 1.25rem;
+}
+
+.price-original-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.price-origin-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #7d7973;
+  margin-bottom: 4px;
+}
+
+.price-strikethrough-box {
+  position: relative;
+  display: inline-block;
+}
+
+.striked-amount {
+  font-family: 'Cinzel', serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #8b8780;
+  line-height: 1;
+  position: relative;
+}
+
+.striked-amount::after {
+  content: "";
+  position: absolute;
+  left: -8%;
+  top: 50%;
+  width: 116%;
+  height: 3px;
+  background: #e63946;
+  transform: rotate(-10deg);
+  border-radius: 2px;
+  box-shadow: 0 0 8px rgba(230, 57, 70, 0.6);
+}
+
+.price-arrow-divider {
+  font-size: 1.4rem;
+  color: var(--gold, #d4af37);
+  opacity: 0.8;
+}
+
+.price-final-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.price-now-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--gold, #d4af37);
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.price-final-tag {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.final-amount {
+  font-family: 'Cinzel', serif;
+  font-size: clamp(2.4rem, 4vw, 3.2rem);
+  font-weight: 800;
+  color: var(--gold-light, #ffffff);
+  text-shadow: 0 0 25px rgba(212, 175, 55, 0.6), 0 0 5px rgba(212, 175, 55, 0.9);
+  line-height: 1;
+}
+
+.final-terms {
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #a39f97;
+}
+
+.promo-guarantee-note {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: #d1cdc7;
+  margin-top: 1rem;
+  padding-top: 0.9rem;
+  border-top: 1px dashed rgba(212, 175, 55, 0.25);
+}
+
+.sparkle-gold {
+  color: var(--gold, #d4af37);
+  font-size: 1rem;
+  margin-right: 4px;
+}
+
+.deal-badge-save {
+  background: rgba(212, 175, 55, 0.12);
+  border: 1px dashed rgba(212, 175, 55, 0.4);
+  color: var(--gold-light, #faedd7);
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 6px;
+  margin-bottom: 1.25rem;
+  display: inline-block;
+}
+
+.btn-glow-gold {
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.35);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.btn-glow-gold:hover {
+  box-shadow: 0 0 35px rgba(212, 175, 55, 0.6);
+}
+
+
+/* ==========================================================================
+   REPRODUCTOR INTERACTIVO ESFÉRICO 360° WEBGL + CONTROLES DE GIROSCOPIO
+   ========================================================================== */
+
+.vr-webgl-stage {
+  position: relative;
+  width: 100%;
+  height: 580px;
+  background: #000000;
+  cursor: grab;
+  overflow: hidden;
+  touch-action: none;
+}
+
+.vr-webgl-stage:active {
+  cursor: grabbing;
+}
+
+.vr-webgl-stage canvas {
+  width: 100% !important;
+  height: 100% !important;
+  display: block;
+}
+
+#vrVideoElement {
+  display: none;
+}
+
+/* Overlay Inicial de Play */
+.vr-play-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 64px);
+  background: radial-gradient(circle at center, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.8) 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+.vr-play-overlay.playing {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.vr-play-center-btn {
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  background: rgba(212, 175, 55, 0.25);
+  border: 2px solid var(--gold, #d4af37);
+  color: var(--gold-light, #ffffff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 35px rgba(212, 175, 55, 0.5), inset 0 0 15px rgba(212, 175, 55, 0.3);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.vr-play-overlay:hover .vr-play-center-btn {
+  transform: scale(1.1);
+  background: rgba(212, 175, 55, 0.45);
+}
+
+.vr-play-caption {
+  font-family: 'Cinzel', serif;
+  font-size: clamp(0.95rem, 3.8vw, 1.2rem);
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: #ffffff;
+  margin-bottom: 0.4rem;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+  text-align: center !important;
+  width: 100% !important;
+  padding: 0 16px !important;
+  box-sizing: border-box !important;
+}
+
+.vr-play-subtext {
+  font-size: 0.82rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold-light, #faedd7);
+  text-align: center !important;
+  width: 100% !important;
+  padding: 0 16px !important;
+  box-sizing: border-box !important;
+  display: block !important;
+}
+
+/* Barra de Controles Inferior del Reproductor */
+.vr-player-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 64px;
+  background: linear-gradient(180deg, rgba(8, 8, 8, 0.7) 0%, rgba(8, 8, 8, 0.98) 100%);
+  border-top: 1px solid rgba(212, 175, 55, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.25rem;
+  z-index: 12;
+  backdrop-filter: blur(8px);
+}
+
+.vr-bar-left,
+.vr-bar-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.vr-bar-btn {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #e5e2dc;
+  border-radius: 6px;
+  padding: 8px 14px;
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.25s ease;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.vr-bar-btn:hover {
+  background: rgba(212, 175, 55, 0.2);
+  border-color: var(--gold, #d4af37);
+  color: #ffffff;
+}
+
+.vr-bar-btn.vr-play-toggle {
+  background: var(--gold, #d4af37);
+  border-color: var(--gold, #d4af37);
+  color: #080808;
+  font-weight: 700;
+}
+
+.vr-bar-btn.vr-play-toggle:hover {
+  background: #faedd7;
+  color: #000;
+}
+
+.vr-bar-btn.vr-gyro-btn.active {
+  background: rgba(46, 204, 113, 0.2);
+  border-color: #2ecc71;
+  color: #2ecc71;
+  box-shadow: 0 0 12px rgba(46, 204, 113, 0.4);
+}
+
+.vr-sensor-pill {
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #8b8882;
+  padding: 4px 10px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+@media (max-width: 768px) {
+  .vr-webgl-stage {
+    height: 400px;
+  }
+
+  .vr-player-bar {
+    height: auto;
+    padding: 10px;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .vr-sensor-pill {
+    display: none;
+  }
+
+  .vr-bar-btn span {
+    font-size: 0.72rem;
+  }
+}
+
+
+/* ==========================================================================
+   MODO PANTALLA COMPLETA TOTAL (COMPATIBLE CON IPHONE SAFARI Y ANDROID)
+   ========================================================================== */
+
+.vr-locked-scroll {
+  overflow: hidden !important;
+  touch-action: none !important;
+}
+
+#vrPlayerWrapper:fullscreen,
+#vrPlayerWrapper:-webkit-full-screen {
+  width: 100vw !important;
+  height: 100vh !important;
+  max-width: 100vw !important;
+  margin: 0 !important;
+  border-radius: 0 !important;
+}
+
+#vrPlayerWrapper:fullscreen .vr-webgl-stage,
+#vrPlayerWrapper:-webkit-full-screen .vr-webgl-stage {
+  height: 100vh !important;
+}
+
+/* Fallback Fullscreen Cinemático para iOS Safari y Móvil */
+.vr-pseudo-fullscreen {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  z-index: 2147483647 !important; /* Capa más alta posible del navegador */
+  border-radius: 0 !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  background: #000000 !important;
+  box-shadow: none !important;
+  border: none !important;
+  transform: none !important;
+}
+
+.vr-pseudo-fullscreen .vr-webgl-stage {
+  width: 100vw !important;
+  height: 100vh !important;
+  max-height: 100vh !important;
+}
+
+.vr-pseudo-fullscreen .vr-player-bar {
+  position: fixed !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  width: 100vw !important;
+  z-index: 2147483647 !important;
+}
+
+/* Ocultar elementos decorativos secundarios en pantalla completa para máxima inmersión */
+.vr-pseudo-fullscreen .vr-floating-compass,
+.vr-pseudo-fullscreen .vr-headset-badge,
+.vr-pseudo-fullscreen .vr-yt-hint {
+  display: none !important;
+}
+
+
+/* ==========================================================================
+   BLINDAJE RESPONSIVE MÓVIL Y CENTRADO COMPLETO (SIN DESPLAZAMIENTO A LA DERECHA)
+   ========================================================================== */
+
+/* Asegurar que ninguna sección ni contenedor exceda el ancho del viewport */
+html, body {
+  width: 100% !important;
+  max-width: 100vw !important;
+  overflow-x: hidden !important;
+  box-sizing: border-box !important;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box !important;
+}
+
+.container, .container-wide {
+  width: 100% !important;
+  max-width: 1240px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: clamp(16px, 4.5vw, 32px) !important;
+  padding-right: clamp(16px, 4.5vw, 32px) !important;
+  box-sizing: border-box !important;
+}
+
+/* Evitar que las secciones dupliquen paddings laterales y desvíen el centrado */
+.section-padding,
+.vr-hero-custom,
+.contact-section,
+.site-footer {
+  width: 100% !important;
+  max-width: 100% !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  box-sizing: border-box !important;
+}
+
+/* Hero Centrado y simétrico */
+.vr-hero-custom {
+  overflow: hidden !important;
+  text-align: center;
+}
+
+.hero-content {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 auto !important;
+}
+
+.hero-content-inner {
+  width: 100% !important;
+  max-width: 840px !important;
+  margin: 0 auto !important;
+  text-align: center;
+}
+
+.hero-main-title {
+  font-family: 'Cinzel', serif;
+  font-size: clamp(1.8rem, 7vw, 3.6rem) !important;
+  letter-spacing: 0.04em !important;
+  line-height: 1.15;
+  word-break: break-word;
+  text-align: center !important;
+}
+
+.hero-badge-tag-vr {
+  max-width: 100%;
+  box-sizing: border-box;
+  white-space: normal;
+  text-align: center;
+  font-size: clamp(0.64rem, 2.3vw, 0.74rem);
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.hero-action-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+.hero-action-row .btn {
+  max-width: 100%;
+}
+
+@media (max-width: 600px) {
+  .hero-action-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .hero-action-row .btn {
+    width: 100% !important;
+    justify-content: center;
+  }
+}
+
+/* ==========================================================================
+   TEXTOS JUSTIFICADOS CON RESPECTO A SU CAJETÍN
+   ========================================================================== */
+.vr-concept-desc,
+.moment-card-desc,
+.package-feature-item p,
+.hero-description-block p,
+.hero-quote-phrase,
+.contact-intro-text,
+.faq-answer p,
+.faq-body,
+.form-sub {
+  text-align: justify !important;
+  text-justify: inter-word !important;
+  hyphens: auto !important;
+  -webkit-hyphens: auto !important;
+  word-break: normal !important;
+}
+
+/* ==========================================================================
+   SECCIÓN EXPERIENCIA INMERSIVA 360 VR (TARIFA/PRECIO) - CENTRADO COMPLETO
+   ========================================================================== */
+.vr-deal-box {
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  overflow: hidden !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.vr-deal-left {
+  text-align: center !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+}
+
+.deal-kicker {
+  text-align: center !important;
+  display: block !important;
+  width: 100% !important;
+  margin: 0 auto 0.5rem auto !important;
+}
+
+.deal-title {
+  text-align: center !important;
+  width: 100% !important;
+  margin: 0 auto 1.25rem auto !important;
+}
+
+.promo-pricing-banner {
+  width: 100% !important;
+  box-sizing: border-box !important;
+  text-align: center !important;
+  margin: 1.25rem auto !important;
+}
+
+.promo-badge-tag {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-wrap: wrap !important;
+  gap: 10px !important;
+  margin-bottom: 1.25rem !important;
+  width: 100% !important;
+  text-align: center !important;
+}
+
+.promo-prices-comparison {
+  width: 100% !important;
+  box-sizing: border-box !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  gap: 1.5rem !important;
+}
+
+.price-original-wrapper,
+.price-final-wrapper {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  text-align: center !important;
+}
+
+.price-strikethrough-box,
+.price-final-tag {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
+}
+
+.promo-guarantee-note {
+  text-align: center !important;
+  width: 100% !important;
+  margin: 1rem auto 0 auto !important;
+}
+
+.deal-text {
+  text-align: center !important;
+  width: 100% !important;
+  max-width: 90% !important;
+  margin: 1.5rem auto !important;
+  border-left: none !important;
+  border-top: 1px solid rgba(212, 175, 55, 0.3) !important;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.3) !important;
+  padding: 14px 10px !important;
+  box-sizing: border-box !important;
+}
+
+.deal-checklist {
+  text-align: center !important;
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 1.25rem auto !important;
+  width: 100% !important;
+}
+
+.deal-checklist li {
+  text-align: center !important;
+  padding-left: 0 !important;
+  margin-bottom: 0.65rem !important;
+  position: static !important;
+}
+
+.deal-checklist li::before {
+  content: "✓ " !important;
+  position: static !important;
+  display: inline-block !important;
+  margin-right: 6px !important;
+  color: var(--gold, #d4af37) !important;
+}
+
+@media (max-width: 768px) {
+  .vr-deal-box {
+    grid-template-columns: 1fr !important;
+    padding: 1.5rem 1.25rem !important;
+    gap: 2rem !important;
+  }
+
+  .launch-promo-ribbon {
+    position: relative !important;
+    top: auto !important;
+    right: auto !important;
+    width: 100% !important;
+    border-radius: 6px !important;
+    margin-bottom: 1.25rem !important;
+    text-align: center !important;
+    justify-content: center !important;
+    padding: 8px 12px !important;
+    font-size: 0.72rem !important;
+    box-sizing: border-box !important;
+  }
+
+  .promo-pricing-banner {
+    padding: 1.25rem 1rem !important;
+  }
+
+  .promo-prices-comparison {
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 0.9rem !important;
+    text-align: center !important;
+  }
+
+  .price-arrow-divider {
+    transform: rotate(90deg) !important;
+    margin: 4px auto !important;
+    display: block !important;
+    text-align: center !important;
+  }
+
+  .final-amount {
+    font-size: 2.4rem !important;
+  }
+
+  .brand-tag {
+    display: none !important;
+  }
+
+  .header-cta {
+    display: none !important;
+  }
+
+  .header-actions {
+    gap: 8px !important;
+  }
+
+  .header-inner {
+    width: 100% !important;
+    padding: 0 16px !important;
+    box-sizing: border-box !important;
+  }
+
+  .moments-interactive-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.25rem !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .moment-card {
+    width: 100% !important;
+    box-sizing: border-box !important;
+    padding: 1.25rem 1.15rem !important;
+  }
+
+  .vr-concepts-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .vr-concept-col {
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .vr-package-showcase {
+    grid-template-columns: 1fr !important;
+    gap: 1.25rem !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .package-feature-item {
+    width: 100% !important;
+    box-sizing: border-box !important;
+    padding: 1.5rem 1.15rem !important;
+  }
+
+  .contact-layout {
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .contact-info-col,
+  .contact-form-col {
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .contact-form-card {
+    width: 100% !important;
+    box-sizing: border-box !important;
+    padding: 1.5rem 1.15rem !important;
+  }
+
+  .form-row.form-row-2 {
+    grid-template-columns: 1fr !important;
+    gap: 0 !important;
+  }
+}
+
+
+/* ==========================================================================
+   CORRECCIÓN INTEGRAL DE RESPONSIVE: CONTACTO, TARJETAS Y FOOTER
+   Elimina desbordamiento lateral a la derecha en móviles (< 768px)
+   ========================================================================== */
+
+/* Asegurar que ninguna sección de contacto ni footer desborde la pantalla */
+.contact-section,
+.site-footer,
+.contact-layout,
+.contact-info-col,
+.contact-form-col,
+.contact-form-card,
+.footer-inner,
+.footer-bottom-bar,
+.footer-bottom-inner {
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  overflow: hidden !important;
+}
+
+/* Tarjetas de contacto (teléfono, WhatsApp, email) */
+.direct-contact-cards {
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+.contact-card {
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  padding: 14px 16px !important;
+  gap: 14px !important;
+  overflow: hidden !important;
+}
+
+.card-details {
+  min-width: 0 !important; /* Permite que el texto se encoja sin empujar el contenedor */
+  flex: 1 !important;
+  overflow: hidden !important;
+}
+
+.contact-val {
+  font-size: clamp(0.88rem, 3.8vw, 1.05rem) !important;
+  word-break: break-all !important; /* Evita que correos largos como miranda-producciones@hotmail.com ensanchen la pantalla */
+}
+
+.contact-card:hover {
+  transform: none !important; /* Desactiva el translateX(6px) en móvil que empujaba hacia la derecha */
+}
+
+/* Badge de cobertura Don Benito / Mérida / Extremadura */
+.contact-meta-badge {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  white-space: normal !important;
+  padding: 10px 14px !important;
+  font-size: 0.78rem !important;
+  line-height: 1.5 !important;
+  word-break: break-word !important;
+  margin-top: 24px !important;
+  background: rgba(255, 255, 255, 0.03) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-radius: 6px !important;
+}
+
+.contact-meta-badge .badge-dot {
+  width: 6px;
+  height: 6px;
+  background: var(--gold, #d4af37);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* Formulario de Contacto en Móvil */
+.contact-form-card {
+  background: rgba(14, 14, 14, 0.95) !important;
+  border: 1px solid rgba(212, 175, 55, 0.3) !important;
+  border-radius: 10px !important;
+  padding: clamp(16px, 4.5vw, 32px) !important;
+  box-sizing: border-box !important;
+}
+
+.contact-form {
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+.form-group {
+  width: 100% !important;
+  box-sizing: border-box !important;
+  margin-bottom: 16px !important;
+}
+
+.form-group label {
+  display: block !important;
+  font-size: 0.82rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.05em !important;
+  color: #d1cdc7 !important;
+  margin-bottom: 6px !important;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  font-family: inherit !important;
+  font-size: 0.92rem !important;
+  background: rgba(255, 255, 255, 0.04) !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  border-radius: 6px !important;
+  padding: 12px 14px !important;
+  color: #ffffff !important;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none !important;
+  border-color: var(--gold, #d4af37) !important;
+  background: rgba(212, 175, 55, 0.05) !important;
+}
+
+.form-group select {
+  cursor: pointer;
+  appearance: auto;
+}
+
+.consent-label {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 10px !important;
+  font-size: 0.78rem !important;
+  line-height: 1.5 !important;
+  color: #9f9b94 !important;
+  cursor: pointer !important;
+}
+
+.consent-label input[type="checkbox"] {
+  width: 18px !important;
+  height: 18px !important;
+  margin-top: 2px !important;
+  flex-shrink: 0 !important;
+}
+
+/* Footer Cinemático Responsivo */
+.footer-inner {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)) !important;
+  gap: 36px !important;
+  padding-bottom: 40px !important;
+  box-sizing: border-box !important;
+}
+
+.footer-brand .brand-main {
+  font-size: 1.4rem !important;
+  letter-spacing: 0.18em !important;
+}
+
+.footer-brand .brand-sub {
+  font-size: 0.75rem !important;
+  letter-spacing: 0.35em !important;
+  color: var(--gold, #d4af37) !important;
+}
+
+.footer-tagline {
+  font-size: 0.8rem !important;
+  color: #8b8780 !important;
+  margin-top: 8px !important;
+}
+
+.group-title {
+  display: block !important;
+  font-family: 'Cinzel', serif !important;
+  font-size: 0.88rem !important;
+  letter-spacing: 0.15em !important;
+  color: var(--gold-light, #faedd7) !important;
+  margin-bottom: 16px !important;
+  text-transform: uppercase !important;
+}
+
+.footer-links-group ul {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 10px !important;
+}
+
+.footer-links-group a {
+  color: #9f9b94 !important;
+  text-decoration: none !important;
+  font-size: 0.88rem !important;
+  transition: color 0.2s ease !important;
+}
+
+.footer-links-group a:hover {
+  color: var(--gold, #d4af37) !important;
+}
+
+.footer-contact-info p {
+  color: #9f9b94 !important;
+  font-size: 0.88rem !important;
+  margin-bottom: 8px !important;
+  word-break: break-all !important;
+}
+
+.footer-contact-info a {
+  color: #e5e2dc !important;
+  text-decoration: none !important;
+}
+
+.footer-socials {
+  display: flex !important;
+  gap: 8px !important;
+  margin-top: 14px !important;
+  align-items: center !important;
+}
+
+.footer-socials a {
+  color: var(--gold, #d4af37) !important;
+  font-size: 0.84rem !important;
+  text-decoration: none !important;
+}
+
+.footer-bottom-bar {
+  border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+  padding: 24px 0 !important;
+  box-sizing: border-box !important;
+}
+
+.footer-bottom-inner {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  text-align: center !important;
+  gap: 8px !important;
+  font-size: 0.78rem !important;
+  color: #72706b !important;
+}
+
+@media (min-width: 768px) {
+  .footer-bottom-inner {
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    text-align: left !important;
+  }
+}
+
+/* ==========================================================================
+   PÍLDORA FLOTANTE FIJA DE WHATSAPP (SIEMPRE VISIBLE EN PANTALLA)
+   ========================================================================== */
+.floating-wa-pill {
+  position: fixed !important;
+  bottom: 24px !important;
+  right: 20px !important;
+  z-index: 9999 !important;
+  text-decoration: none !important;
+  display: block !important;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.wa-pill-inner {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  background-color: #12110f !important;
+  border: 1.5px solid rgba(37, 211, 102, 0.7) !important;
+  padding: 9px 16px 9px 13px !important;
+  border-radius: 40px !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.8), 0 0 18px rgba(37, 211, 102, 0.3) !important;
+  color: #ffffff !important;
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+}
+
+.floating-wa-pill:hover .wa-pill-inner {
+  transform: translateY(-3px) scale(1.04) !important;
+  border-color: #25d366 !important;
+  background-color: #181613 !important;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.9), 0 0 25px rgba(37, 211, 102, 0.5) !important;
+}
+
+.floating-wa-pill .icon-wa {
+  color: #25d366 !important;
+  width: 22px !important;
+  height: 22px !important;
+  display: block !important;
+  flex-shrink: 0 !important;
+}
+
+.wa-text-box {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+}
+
+.wa-status-dot {
+  width: 9px !important;
+  height: 9px !important;
+  background-color: #25d366 !important;
+  border-radius: 50% !important;
+  box-shadow: 0 0 10px #25d366 !important;
+  animation: pulseDot 2s infinite !important;
+  display: inline-block !important;
+}
+
+@keyframes pulseDot {
+  0% { transform: scale(0.9); opacity: 0.75; box-shadow: 0 0 4px #25d366; }
+  50% { transform: scale(1.35); opacity: 1; box-shadow: 0 0 14px #25d366; }
+  100% { transform: scale(0.9); opacity: 0.75; box-shadow: 0 0 4px #25d366; }
+}
+
+.wa-label {
+  font-size: 0.82rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.05em !important;
+  color: #ffffff !important;
+  display: none !important;
+}
+
+@media (min-width: 600px) {
+  .wa-label {
+    display: inline-block !important;
+  }
+}
